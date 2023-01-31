@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Read -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Read">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#AVVIO_BIMANE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#AVVIO_BIMANE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NC"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NO"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NC"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NO"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#BARRIERE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#BARRIERE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#OSSD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DQ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DQ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#ELETTROSERRATURA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#ELETTROSERRATURA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#OSSD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Read"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDQ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDQ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FUNGO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FUNGO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#LASER_SCANNER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#LASER_SCANNER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DISPOSITIVI_SICUREZZA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Send"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#OSSD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#OSSD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#OSSD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC_NOSAFE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC_NOSAFE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DQ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC_SAFE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC_SAFE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#PLC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DQ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#HasModule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDQ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SCHEDE_ESPANSIONE_PLC">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#Read"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#SEGNALI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#AVVIO_BIMANE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#BARRIERE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#ELETTROSERRATURA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FUNGO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#LASER_SCANNER"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#DQ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#FDQ"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#NO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/francescosolinas/ontologies/2023/0/untitled-ontology-2#OSSD"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
